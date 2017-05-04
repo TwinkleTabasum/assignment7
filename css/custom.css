@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i');
+
+body{
+   margin: 0;
+   padding: 0;
+
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+.header {
+	background-image: url(../image/Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.header:before {
+    position: absolute;
+    content: "";
+    background: rgba(105, 105, 120, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.container {
+	width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-part{
+	overflow: hidden;
+	padding: 30px 0;
+}
+.logo {
+	width: 20%;
+    float: left;
+    padding: 27px 0;
+}
+nav {
+    width: 80%;
+    float: left;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 37px 0 37px 75px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+}
+.content {
+	position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.content h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.content a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    padding: 20px 50px;
+    display: inline-block;
+}
+.shopnow {
+}
+
+.slider-button {
+	position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider-button ul {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-button ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slider-button ul li a {
+    text-decoration: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.slider-button ul li a:hover {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+.product-section {
+	padding: 60px 0;
+}
+
+.product-section:hover .product-heading h2:before,
+.product-section:hover .product-heading h2:after {
+    transform: translateX(-50%) scale(1);
+}
+.heading {
+	text-align: center;
+}
+.heading h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+    padding: 30px 0;
+    position: relative;
+}
+
+.heading h2:before {
+    position: absolute;
+    content: "";
+    width: 115px;
+    height: 3px;
+    background-color: #dc0000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%)  scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.heading h2:after {
+    position: absolute;
+    content: "";
+    width: 115px;
+    height: 3px;
+    background-color: #dc0000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.product-list {
+	overflow: hidden;
+}
+
+.product {
+	width: 33.33%;
+    float: left;
+    padding: 0 15px 30px 15px;
+    box-sizing: border-box;
+}
+
+.catagory {
+	position: relative;
+}
+.category:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,37,51,0.6);
+}
+.offer-section {
+	overflow: hidden;
+}
+
+.offer {
+	width: 50%; 
+	float:left;
+	padding: 15px;
+	box-sizing: border-box;
+	position: relative;
+}
+.offer a{
+	width: 75%;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.offer h3{
+	font-size:45px;
+	color: #fff;
+	text-align: center;
+}
+.offer1 {
+}
+
+.offer2 {
+}
+
+.trend-section {
+	background: url(../image/tradbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 0;
+	position: relative;
+    overflow: hidden;
+
+}
+.Trending:hover .heding h2:before, 
+.Trending:hover .heding h2:after{
+	transform: translateX(-50%) scale(1);	
+}
+.trend {
+}
+
+.trend-img {
+	float: left;
+}
+
+.trend-content {
+	float: left;
+	width: 50%;
+	padding-left:30px;
+	box-sizing: border-box;
+	padding-bottom: 60px;
+	overflow: hidden;
+}
+.trend-content h4{
+	color: #dc0000;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 30px 0;
+}
+.trend-content h6{
+	color: #777777;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.trend-content p{
+	color: #777777;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 30px 0 35px 0;
+}
+.size-button {
+	padding: 60px 0 0 0;
+}
+.size-button button {
+    padding: 15px 27px;
+    background: transparent;
+    border: 1px solid #000000;
+    margin: 0 30px 0px 0;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.shop-button {
+	 padding: 30px 0;
+}
+
+.sizeguide {
+	text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 14px 42px;
+    background: transparent;
+    border: 1px solid #000000;
+    margin: 0 30px 0 0;
+}
+ .sizeguide:hover {
+    background-color: #333333;
+    color: #fff;
+}
+.slider-button ul li a:hover{
+	border: 2px solid #ff0000;
+    background-color: transparent;
+}
+
+.blog {
+    padding: 60px 0;
+}
+.blog h2{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    font-style: italic;
+    color: #595959;
+    margin: 0;
+    padding: 30px 0;
+}
+.blog span{
+	font-size: 16px;
+    color: #5c5c5c;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.blog p {
+    color: #9a9a9a;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 25px 0;
+}
+.blog h4{
+	color: #dc0000;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 30px 0;
+}
+.img1 {
+	width: 50%;
+    float: left;
+    padding: 0 15px 60px 15px;
+    box-sizing: border-box;
+}
+
+.img1{
+	 padding-top: 60px;
+}
+.img1 a{
+	 text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 14px 42px;
+    background: transparent;
+    border: 1px solid #000;
+    margin: 0 30px 0 0;
+}
+.img1 a:hover{
+	background: #333;
+	color: #fff;
+
+}
+.subscribe-section {
+	background: url(../image/footgirl.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 0;
+	overflow: hidden;
+	position: relative;
+    z-index: 1;
+}
+.subscribe-section:before {
+    position: absolute;
+    content: "";
+    background: rgba(34, 37, 51, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.subscribe-form {
+	float: left;
+	width: 70%;
+
+}
+.subscribe-form h4{
+	color: #ffffff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.subscribe-button {
+	float: right;
+	width: 30%;
+}
+
+.sub-bt{
+	padding: 12px 80px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+
+}
+.sub-bt:hover{
+	background-color: transparent;
+    color: #fff;
+}
+input{
+	height: 50px;
+	width: 70%;
+	border:1px solid #fff;
+	background: rgba(255, 255, 255, 0);
+	color: #fff;
+	font-size: 13pt;
+	padding-left: 25px;
+	
+}
+footer{
+	margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #9a9a9a;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 100;
+}
+.fa.fa-heart {
+	color: red;
+}
